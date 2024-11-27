@@ -1,6 +1,6 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React, { act } from 'react'
+import { render, screen } from '@testing-library/react'
+import App from './App'
 
 jest.mock('./Header/Header', () => () => <div>Mocked Header</div>)
 jest.mock('./Books/Books', () => () => <div>Mocked Books</div>)
